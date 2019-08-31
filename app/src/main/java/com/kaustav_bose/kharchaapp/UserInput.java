@@ -56,7 +56,7 @@ public class UserInput extends AppCompatActivity {
                     //DatabaseReference ref=FirebaseDatabase.getInstance().getReference().child("user_Data").child(id);
                     if (bundle.getString("category").equals("Food")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String cat = bundle.getString("category");
                         String id = databaseReference.push().getKey();
@@ -68,7 +68,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Home")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -81,7 +81,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Clothes")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -94,7 +94,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Gifts")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -107,7 +107,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Travel")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -120,7 +120,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Tax")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -133,7 +133,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Shopping")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -146,7 +146,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Entertainment")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -159,7 +159,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Bills")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -172,7 +172,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Education")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -185,7 +185,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Health")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -198,7 +198,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Insurance")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -211,7 +211,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Donations")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -224,7 +224,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Miscellaneous")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -237,7 +237,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Rentals")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -250,7 +250,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Lottery")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -263,7 +263,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Investment")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -276,7 +276,7 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Others")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
@@ -289,12 +289,12 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Salary")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
                         dataModel.setCategory("Earned from :- " + cat);
-                        dataModel.setDate(formattedDate);
+                        dataModel.setDate("Date :- "+formattedDate);
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
@@ -302,12 +302,12 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Awards")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
                         dataModel.setCategory("Earned from :- " + cat);
-                        dataModel.setDate(formattedDate);
+                        dataModel.setDate("Date :- "+formattedDate);
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
@@ -315,12 +315,12 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Grants")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
                         dataModel.setCategory("Earned from :- " + cat);
-                        dataModel.setDate(formattedDate);
+                        dataModel.setDate("Date :- "+formattedDate);
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
@@ -328,12 +328,12 @@ public class UserInput extends AppCompatActivity {
                     }
                     if (bundle.getString("category").equals("Refunds")) {
                         Date date = Calendar.getInstance().getTime();
-                        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         String formattedDate = df.format(date);
                         String id = databaseReference.push().getKey();
                         String cat = bundle.getString("category");
                         dataModel.setCategory("Earned from :- " + cat);
-                        dataModel.setDate(formattedDate);
+                        dataModel.setDate("Date :- "+formattedDate);
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);

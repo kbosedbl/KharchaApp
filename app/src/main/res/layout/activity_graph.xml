@@ -46,34 +46,7 @@
         android:id="@+id/pieChart2"
         android:layout_width="match_parent"
         android:layout_height="281dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:text="INCOME"
-            android:textSize="25sp"
-            android:textColor="#fff"
-            android:layout_marginTop="25sp"
-            />
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/barchart"
-        android:layout_width="match_parent"
-        android:layout_height="281dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:text="EXPENSE"
-            android:textSize="25sp"
-            android:textColor="#fff"
-            android:layout_marginTop="25sp"
-            />
-        <com.github.mikephil.charting.charts.BarChart
-            android:id="@+id/barchart2"
-            android:layout_width="match_parent"
-            android:layout_height="281dp"/>
+        
         <Button
             android:id="@+id/back_button"
             android:layout_width="wrap_content"

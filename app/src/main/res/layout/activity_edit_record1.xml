@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellow"
+    tools:context=".EditRecord1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:background="#EB3B03"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="EDIT DATA"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#fff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#fff"
+        android:hint="Enter the new Value"
+        android:textSize="15dp"
+        android:textColorHint="#fff"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:id="@+id/amount_category1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#AA17C4"
+        android:hint="Change the Date of transaction?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColorHint="#EE440E"
+        android:gravity="center"
+        />
+    <DatePicker
+        android:id="@+id/pick"
+        android:calendarTextColor="#E63E09"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></DatePicker>
+    <Button
+        android:id="@+id/submitvalues1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textColor="#fff"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:background="#FF5722"/>
+    </LinearLayout>>
+    </ScrollView>>
+</LinearLayout>
