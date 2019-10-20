@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main2Activity"></activity>
-        <activity android:name=".EditRecord1" />
         <activity android:name=".GraphActivity" />
         <activity android:name=".UserInput" />
         <activity android:name=".IncomeList" />

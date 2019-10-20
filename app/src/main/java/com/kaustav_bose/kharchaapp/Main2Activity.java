@@ -48,7 +48,6 @@ public class Main2Activity extends AppCompatActivity {
                             DataModel dataModel = snapshot.getValue(DataModel.class);
                             String date=dataModel.getDate();
                             date=date.substring(8);
-                            //Toast.makeText(Main2Activity.this,dt+"\n"+date,Toast.LENGTH_SHORT).show();
                            if(date.equals(dt))
                                arrayList.add(dataModel);
                         }

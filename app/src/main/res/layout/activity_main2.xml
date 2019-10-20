@@ -28,23 +28,25 @@
         <DatePicker
             android:id="@+id/pick2"
             android:layout_width="wrap_content"
-            android:layout_height="399dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="0dp"
             android:calendarTextColor="#E63E09"
-            android:scaleY="0.8"></DatePicker>
-    <Button
-        android:background="#EB3B03"
-        android:text="SEARCH"
-        android:gravity="center"
-        android:id="@+id/srchbydt"
-        android:layout_width="match_parent"
-        android:layout_height="47dp" />
+            android:scaleY="0.8"
+            android:scrollbarAlwaysDrawVerticalTrack="true"></DatePicker>
+
+        <Button
+            android:id="@+id/srchbydt"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="#EB3B03"
+            android:gravity="center"
+            android:text="SEARCH" />
 
         <ListView
             android:id="@+id/llv"
             android:layout_width="match_parent"
-            android:layout_height="174dp"></ListView>
+            android:layout_height="4000dp"></ListView>
     </LinearLayout>>
-    </ScrollView>>
+    </ScrollView>
 </LinearLayout>

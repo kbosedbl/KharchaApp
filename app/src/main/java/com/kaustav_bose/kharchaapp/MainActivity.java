@@ -11,7 +11,7 @@ import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
-    public static int timer=1000;
+    public static int timer=2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

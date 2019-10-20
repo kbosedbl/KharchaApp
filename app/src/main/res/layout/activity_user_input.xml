@@ -7,23 +7,34 @@
     android:orientation="vertical"
     android:background="@drawable/yellow"
     tools:context=".UserInput">
-    <EditText
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textColor="#fff"
-        android:hint="Enter"
-        android:textColorHint="#fff"
+        android:layout_height="45dp"
+        android:background="#FF5722"
+        android:text="User Input"
+        android:textSize="25dp"
         android:gravity="center"
+        android:textColor="#fff"/>
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:hint="Enter the amount"
+        android:textColorHint="#000"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/roundedcorners"
+        android:gravity="center"
+        android:layout_gravity="center"
         android:inputType="numberDecimal"
         android:id="@+id/amount_category"/>
     <Button
         android:id="@+id/submitvalues"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="SUBMIT"
         android:textColor="#fff"
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
-        android:background="#FF5722"/>
+        android:background="@drawable/roundedcrner"/>
 
 </LinearLayout>
