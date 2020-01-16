@@ -4,10 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/yellow"
+    android:background="#FF7800"
     android:orientation="vertical"
     tools:context=".GraphActivity">
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#853f0f"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -46,15 +50,7 @@
         android:id="@+id/pieChart2"
         android:layout_width="match_parent"
         android:layout_height="281dp" />
-        
-        <Button
-            android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BACK"
-            android:textColor="#fff"
-            android:layout_gravity="center"
-            android:background="#FF5722"/>
+
     </LinearLayout>
     </ScrollView>
     </LinearLayout>

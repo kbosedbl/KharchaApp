@@ -11,7 +11,7 @@ import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
-    public static int timer=2000;
+    public static int timer=1700;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +20,8 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
-
-                    startActivity(new Intent(MainActivity.this,Dashboard.class));
-                    finish();
-
+                startActivity(new Intent(MainActivity.this,StartActivity.class));
+                finish();
             }
         },timer);
     }

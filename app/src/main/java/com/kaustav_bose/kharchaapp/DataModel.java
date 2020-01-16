@@ -5,6 +5,7 @@ public class DataModel {
    float value;
    String date;
     String id;
+    String email;
 
 
     public String getId() {
@@ -38,5 +39,7 @@ public class DataModel {
     public void setDate(String date) {
         this.date = date;
     }
+    public void setEmail(String email){this.email=email;}
+    public String getEmail(){return email;}
 }
 

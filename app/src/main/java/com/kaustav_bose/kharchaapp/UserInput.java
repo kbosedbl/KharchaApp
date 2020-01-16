@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -33,6 +35,7 @@ public class UserInput extends AppCompatActivity {
     Bundle bundle;
     DataModel dataModel;
     DatabaseReference databaseReference;
+    FirebaseUser firebaseUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,19 @@ public class UserInput extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("user_data", MODE_PRIVATE);
         final SharedPreferences.Editor editor=sharedPreferences.edit();
         //databaseReference= FirebaseDatabase.getInstance().getReference("user_Data");
+
+        firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
+        String mail=firebaseUser.getEmail();
+        String ssp="";
+        for(int i=mail.length()-1;i>=0;i--){
+            char ch=mail.charAt(i);
+            if(ch=='.'||ch=='@'||ch=='#')
+                continue;
+            else
+                ssp=ssp+ch;
+        }
+        final String sp=ssp;
+
         bundle=getIntent().getExtras();
         dataModel=new DataModel();
         button.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +80,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setDate("Date :- " + formattedDate);
                         dataModel.setValue(f);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Home")) {
@@ -77,6 +94,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Clothes")) {
@@ -90,6 +108,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Gifts")) {
@@ -103,6 +122,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Travel")) {
@@ -116,6 +136,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Tax")) {
@@ -129,6 +150,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Shopping")) {
@@ -142,6 +164,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Entertainment")) {
@@ -155,6 +178,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Bills")) {
@@ -168,6 +192,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Education")) {
@@ -181,6 +206,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Health")) {
@@ -194,6 +220,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Insurance")) {
@@ -207,6 +234,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Donations")) {
@@ -220,6 +248,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Miscellaneous")) {
@@ -233,6 +262,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Rentals")) {
@@ -246,6 +276,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Lottery")) {
@@ -259,6 +290,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Investment")) {
@@ -272,6 +304,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Others")) {
@@ -285,6 +318,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Salary")) {
@@ -298,6 +332,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Awards")) {
@@ -311,6 +346,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Grants")) {
@@ -324,6 +360,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     if (bundle.getString("category").equals("Refunds")) {
@@ -337,6 +374,7 @@ public class UserInput extends AppCompatActivity {
                         dataModel.setValue(f);
                         dataModel.setId(id);
                         dataModel.setId(id);
+                        dataModel.setEmail(firebaseUser.getEmail());
                         databaseReference.child(id).setValue(dataModel);
                     }
                     Intent intent = new Intent(UserInput.this, Dashboard.class);

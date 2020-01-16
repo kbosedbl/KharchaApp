@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/yellow"
+    android:background="#FF7800"
     tools:context=".EditRecord1">
     <ScrollView
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
     <TextView
-        android:background="#EB3B03"
+        android:background="#853F0F"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="EDIT DATA"
@@ -23,9 +23,10 @@
         android:textSize="20dp"
         android:textColor="#fff"/>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:textColor="#FF5722"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:hint="Enter the new Value"
         android:background="@drawable/roundedcorners"
@@ -38,10 +39,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:textColor="#AA17C4"
-        android:hint="Change the Date of transaction?"
+        android:hint="Change the Date of transaction"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColorHint="#EE440E"
+        android:textColorHint="#000"
         android:gravity="center"
         />
     <DatePicker
@@ -57,7 +58,7 @@
         android:layout_height="wrap_content"
         android:text="SUBMIT"
         android:textColor="#fff"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:background="@drawable/roundedcrner"/>
     </LinearLayout>>

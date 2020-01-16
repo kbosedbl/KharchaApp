@@ -71,6 +71,7 @@ public class ExpenseList extends AppCompatActivity {
                 Toast.makeText(ExpenseList.this,arrayList.get(position).getCategory(),Toast.LENGTH_SHORT).show();
                 intent.putExtra("category",arrayList.get(position).getCategory());
                 intent.putExtra("auto_key",id);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 bundle=getIntent().getExtras();
                 String category=arrayList.get(position).getCategory();

@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/yellow"
+    android:background="#FF7800"
     tools:context=".UserInput">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="#FF5722"
+        android:background="#853F0F"
         android:text="User Input"
         android:textSize="25dp"
         android:gravity="center"

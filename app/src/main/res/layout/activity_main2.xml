@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity"
     android:orientation="vertical"
-    android:background="@drawable/yellow"
+    android:background="#FF7800"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -15,15 +15,11 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <TextView
-        android:background="#EB3B03"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#853f0f"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Search By Date"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:textColor="#fff"/>
+        android:layout_height="50dp"/>
 
         <DatePicker
             android:id="@+id/pick2"
@@ -39,7 +35,7 @@
             android:id="@+id/srchbydt"
             android:layout_width="match_parent"
             android:layout_height="47dp"
-            android:background="#EB3B03"
+            android:background="#853F0F"
             android:gravity="center"
             android:text="SEARCH" />
 

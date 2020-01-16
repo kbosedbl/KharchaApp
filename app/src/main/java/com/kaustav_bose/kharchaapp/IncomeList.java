@@ -59,6 +59,7 @@ public class IncomeList extends AppCompatActivity {
                 Intent intent = new Intent(IncomeList.this, UserInput.class);
                 Toast.makeText(IncomeList.this, arrayList2.get(position).getCategory(), Toast.LENGTH_SHORT).show();
                 intent.putExtra("category", arrayList2.get(position).getCategory());
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });

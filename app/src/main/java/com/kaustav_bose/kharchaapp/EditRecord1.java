@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -33,11 +35,26 @@ public class EditRecord1 extends AppCompatActivity{
     final Calendar myCalendar = Calendar.getInstance();
     DatePicker datePicker;
     EditText et1;
+    FirebaseUser firebaseUser;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_record1);
         Bundle bundle=getIntent().getExtras();
         datePicker=findViewById(R.id.pick);
+
+        firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
+        String mail=firebaseUser.getEmail();
+        String ssp="";
+        for(int i=mail.length()-1;i>=0;i--){
+            char ch=mail.charAt(i);
+            if(ch=='.'||ch=='@'||ch=='#')
+                continue;
+            else
+                ssp=ssp+ch;
+        }
+        final String sp=ssp;
+        //drawchart(sp);
+
         findViewById(R.id.submitvalues1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,12 +64,14 @@ public class EditRecord1 extends AppCompatActivity{
                     prev_amt = Float.valueOf(et1.getText().toString());
                     String id = getIntent().getStringExtra("id");
                     String category = getIntent().getStringExtra("category");
+                    final String ssp=getIntent().getStringExtra("userid");
                     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("user_Data").child(id);
                     DataModel dataModel = new DataModel();
                     dataModel.setId(id);
                     dataModel.setValue(prev_amt);
                     dataModel.setDate("Date :- " + old_date);
                     dataModel.setCategory(category);
+                    dataModel.setEmail(firebaseUser.getEmail());
                     databaseReference.setValue(dataModel);
                     Toast.makeText(EditRecord1.this, "Updated", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(EditRecord1.this, Dashboard.class));

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/yellow"
+    android:background="#FF7800"
     android:orientation="vertical"
     tools:context=".IncomeList">
     <TextView
@@ -13,7 +13,7 @@
         android:textColor="#fff"
         android:gravity="center"
         android:text="Categories"
-        android:background="#FF5722"/>
+        android:background="#853F0F"/>
     <ListView
         android:id="@+id/income_list"
         android:layout_width="match_parent"
