@@ -16,8 +16,9 @@
         android:layout_height="45dp"
         android:background="#853F0F"
         android:layout_marginLeft="0dp"
+        android:layout_toLeftOf="@+id/logout2"
         android:text="Income and Expenses"
-        android:gravity="center"
+        android:layout_centerHorizontal="true"
         android:textSize="25dp"        
         android:textColor="#fff"/>
         <TextView
